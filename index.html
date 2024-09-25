@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackathon Exit Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body background="J4x.gif">
+    <div class="container">
+        <h1>Hackathon Exit Form</h1>
+        <!-- Team Name -->
+        <div class="question">
+            <label for="team-name">1. What is your team name?</label>
+            <select id="team-name" name="team-name" required>
+                <option value="" disabled selected>Select your team</option>
+                <option value="teamA">Team A</option>
+                <option value="teamB">Team B</option>
+                <option value="teamC">Team C</option>
+                <option value="teamD">Team D</option>
+            </select>
+        </div>
+
+        <!-- School Selection -->
+        <div class="question">
+            <label for="school">2. Which school are you from?</label>
+            <select id="school" name="school" required>
+                <option value="" disabled selected>Select your school</option>
+                <option value="schoolA">School A</option>
+                <option value="schoolB">School B</option>
+                <option value="schoolC">School C</option>
+                <option value="schoolD">School D</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+
+        <!-- Rating the Hackathon Experience -->
+        <div class="question">
+            <label for="experience">3. How would you rate your hackathon experience?</label>
+            <div class="rating">
+                <input type="radio" id="rate1" name="experience" value="1" required>
+                <label for="rate1" style="font-size: 50px;">😢</label>
+                <input type="radio" id="rate2" name="experience" value="2" required>
+                <label for="rate2" style="font-size: 50px;">😕</label>
+                <input type="radio" id="rate3" name="experience" value="3" required>
+                <label for="rate3" style="font-size: 50px;">😐</label>
+                <input type="radio" id="rate4" name="experience" value="4" required>
+                <label for="rate4" style="font-size: 50px;">😊</label>
+                <input type="radio" id="rate5" name="experience" value="5" required>
+                <label for="rate5" style="font-size: 50px;">😁</label>
+            </div>
+        </div>
+
+        <!-- Feedback -->
+        <div class="question">
+            <label for="feedback">4. What would you like to see next time?</label>
+            <textarea id="feedback" name="feedback" rows="4" required></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="submit-btn">
+            <button type="button" id="submit">Submit</button>
+        </div>
+    </div>
+    <script src="/main.js"></script>
+</body>
+
+</html>
